@@ -1,12 +1,13 @@
-*{
-    padding:0 ;
-    margin:0 ;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* 
 1.Từ ngoài vào trong
 2.Từ trên xuống dưới
@@ -19,15 +20,21 @@ html {
 4.Kiểu chữ (kiểu chữ, hình tròn, hình vuông,...)
 
  */
-#main {
-
+.clear {
+    clear: both;
 }
 
+.text-white {
+    color: #fff !important;
+}
+
+#main {}
+
 #header {
-position: fixed;
-left: 0;
-top: 0;
-right: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     height: 46px;
     background-color: #000;
     z-index: 1;
@@ -37,45 +44,46 @@ right: 0;
     display: inline-block;
 }
 
-#nav, .subnav{
+#nav,
+.subnav {
     list-style-type: none;
 
 }
-#nav > li{
+
+#nav>li {
     display: inline-block;
 }
+
 #nav li {
-    
+
     position: relative;
 }
 
-#nav > li > a{
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
 
 #nav li a {
     text-decoration: none;
-    line-height:46px;
+    line-height: 46px;
     padding: 0 24px;
     display: block;
 }
 
-#nav li:hover .subnav{
+#nav li:hover .subnav {
     display: block;
 }
 
 #nav .subnav li:hover a,
-#nav > li:hover > a {
+#nav>li:hover>a {
     color: #000;
     background-color: #ccc;
 }
 
-#nav li:hover a {
-    
-}
+#nav li:hover a {}
 
-#nav .subnav{
+#nav .subnav {
     display: none;
     position: absolute;
     top: 100%;
@@ -85,7 +93,7 @@ right: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#nav .subnav a{
+#nav .subnav a {
     color: #000;
     padding: 0 12px;
     line-height: 38px;
@@ -95,21 +103,22 @@ right: 0;
 
     font-size: 14px;
 }
+
 #header .search-btn {
- float: right;
+    float: right;
 }
 
 #header .search-icon {
-color: #fff;
-font-size: 20px;
-line-height: 46px;
-padding: 0 21px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
 
 }
 
 #header .search-btn:hover {
     background-color: #f44336;
- cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -120,46 +129,49 @@ padding: 0 21px;
     background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
- 
-#slider  .text-content{
-position: absolute;
-color: #fff;
-bottom: 48px;
-left: 50%;
-transform: translateX(-50%);
-text-align: center;
-width: 100%;
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
 }
-#slider  .text-heading {
+
+#slider .text-heading {
     font-size: 24px;
     font-weight: 500%;
 }
-#slider  .text-description {
- font-size: 15px;
- margin-top: 25px;
-}
-#content {
 
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
 }
+
+#content {}
+
 #content .content-section {
     width: 800px;
     margin-right: auto;
     margin-left: auto;
-   padding: 64px 0;
+    padding: 64px 0;
 }
+
 #content .section-heading {
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 4px;
- text-align: center; 
+    text-align: center;
 }
 
 #content .section-sub-heading {
- font-size: 15px; 
-margin-top: 25px;
-font-style: italic;
-opacity: 0.6;
-text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
 }
 
 
@@ -172,9 +184,33 @@ text-align: center;
 
 }
 
-#footer {
-
+#content .members-list {
+    margin-top: 48px;
 }
 
 
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
 
+#content .member-name {
+    font-size: 15px;
+
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+   
+#footer {
+
+
+}
